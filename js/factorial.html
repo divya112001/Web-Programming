@@ -1,0 +1,27 @@
+<html>
+<body>
+<h1><u><i>factorial </i></u></h1>
+<script>
+function fact(n)
+{
+var n=prompt("enter a number")
+var ans=1;
+if(n==0 || n==1)
+{
+return ans;
+}
+else
+{
+for(var i=n; i>=1; i--)
+{
+ans=ans*i
+}
+alert("factorial of"+n+"="+ans);
+}
+}
+</script>
+<form>
+<input type="button" value="click" onclick="fact()"/>
+</form>
+</body>
+</html>
