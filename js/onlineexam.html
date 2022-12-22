@@ -1,0 +1,54 @@
+<html>
+<head>
+<script>
+function exam()
+{
+var m=1;
+if(document.examForm.one.value=="b tag")
+m=m+1;
+if(document.examForm.two.value=="6")
+m=m+1;
+if(document.examForm.three.value=="ol")
+m=m+1;
+if(document.examForm.four.value=="Tim Berners-Lee")
+m=m+1;
+alert("Thank you for taking the online exam !! \n your score is :"+m+"out of 4");
+}
+</script>
+</head>
+<body bgcolor=" #efe2b6 ">
+<form name ="examForm" onsubmit="return exam()" method="get">
+<center><u><h2>ONLINE EXAM FORM</center></u></h2>
+Enter your name :<input type="text" name="name">
+<p>1) Which element is used for making any text bold ?<br>
+<input type="radio" name="one" value="p">p tag<br>
+<input type="radio" name="one" value="i">i tag<br>
+<input type="radio" name="one" value="b">b tag<br>
+<input type="radio" name="one" value="h">h tag<br>
+</p>
+<p>2) How many heading tags are there in HTML?<br>
+<input type="radio" name="two" value="2">2<br>
+<input type="radio" name="two" value="3">3<br>
+<input type="radio" name="two" value="5">5<br>
+<input type="radio" name="two" value="6">6<br>
+</p><p>3) Who is the father of HTML?<br>
+<input type="radio" name="three" value="ul">ul<br>
+<input type="radio" name="three" value="ol">ol<br>
+<input type="radio" name="three" value="li">li<br>
+<input type="radio" name="three" value="href">href<br>
+</p>
+<p>4) How to create an ordered list in HTML ?<br>
+<input type="radio" name="four" value="Rasmus Lerdorf">Rasmus Lerdorf<br>
+<input type="radio" name="four" value="Tim Berners-Lee">Tim Berners-Lee<br>
+<input type="radio" name="four" value=" Brendan Eich"> Brendan Eich<br>
+<input type="radio" name="four" value="Sergey Brin">Sergey Brin<br>
+</p>
+<p>
+<center>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</center>
+</p>
+</body>
+</html>
+		
